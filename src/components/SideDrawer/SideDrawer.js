@@ -15,10 +15,10 @@ if(props.show) {
     <nav className={drawerClasses}>
       <div>
         <Link to="/">Home</Link>
-        <Link to="about">About Us</Link>
-        <Link to="it-products">IT Products</Link>
-        <Link to="security-products">Security Products</Link>
-        <Link to="wireless-products">Wireless Solutions</Link>
+        <Link to="/about">About Us</Link>
+        <Link to="/it-products">IT Products</Link>
+        <Link to="/security-products">Security Products</Link>
+        <Link to="/wireless-solutions">Wireless Solutions</Link>
       </div>
     </nav>
   );

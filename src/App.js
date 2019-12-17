@@ -7,8 +7,14 @@ import ToolBar from "./components/ToolBar/ToolBar";
 import SideDrawer from "./components/SideDrawer/SideDrawer";
 import Backdrop from "./components/Backdrop/Backdrop";
 
-import { BrowserRouter as Router } from "react-router-dom";
+import { BrowserRouter as Router, Route } from "react-router-dom";
 import { render } from "@testing-library/react";
+
+import HomeScreen from "./screens/Home";
+import AboutUs from './screens/AboutUs'
+import ITproduct from './screens/ITproducts'
+import SecurityProducts from './screens/SecurityProducts'
+import WirelessSolutions from './screens/WirelessSolutions'
 
 class App extends Component {
   state = {
@@ -22,15 +28,13 @@ class App extends Component {
   };
 
   backdropClickHandler = () => {
-    this.setState({sideDrawerOpen: false})
-  }
+    this.setState({ sideDrawerOpen: false });
+  };
 
   render() {
-   
     let backdrop;
 
     if (this.state.sideDrawerOpen) {
-    
       backdrop = <Backdrop click={this.backdropClickHandler} />;
     }
 
@@ -38,12 +42,14 @@ class App extends Component {
       <Router>
         <div style={{ height: "100%" }}>
           <ToolBar drawerClickHandler={this.drawerToggleClickHandler} />
-       <SideDrawer show={this.state.sideDrawerOpen} />
+          <SideDrawer show={this.state.sideDrawerOpen} />
           {backdrop}
-
-          <main style={{ marginTop: "64px" }}>
-            <p>This is the page content</p>
-          </main>
+          
+          <Route exact path="/" component={HomeScreen} />
+          <Route  path="/about" component={AboutUs} />
+          <Route  path="/it-products" component={ITproduct} />
+          <Route  path="/security-products" component={SecurityProducts} />
+          <Route  path="/wireless-solutions" component={WirelessSolutions} />
         </div>
       </Router>
     );
