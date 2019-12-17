@@ -1,0 +1,42 @@
+.toolbar {
+  width: 100%;
+  position: fixed;
+  background: rgb(245, 245, 245);
+border-bottom: 1px solid lightgrey;
+  height: 56px;
+  top: 0;
+  left: 0;
+}
+
+.toolbar_logo {
+
+  color: black;
+}
+
+.toolbar_logo a {
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: black;
+}
+
+.toolbar_navigation {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  padding: 0 1rem;
+  justify-content: space-around;
+}
+
+.toolbar_navigation-items a {
+  text-decoration: none;
+  padding: 0 0.5rem;
+  color: black;
+}
+
+.toolbar_navigation-items {
+  display: flex;
+}
+
+.spacer {
+    flex: 1;
+}
