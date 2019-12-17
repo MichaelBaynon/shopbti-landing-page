@@ -11,7 +11,7 @@ const ToolBar = props => (
   <header className="toolbar">
     <nav className="toolbar_navigation">
       <div className="toolbar_logo">
-        <Link to="/">Shop Bti</Link>
+        <Link to="/">Shop BTI</Link>
       </div>
       <div className="spacer" />
       <div>
