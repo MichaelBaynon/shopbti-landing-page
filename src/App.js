@@ -46,7 +46,7 @@ class App extends Component {
           {backdrop}
           
           <Route exact path="/" component={HomeScreen} />
-          <Route  path="/about" component={AboutUs} />
+          <Route  path="/policies" component={AboutUs} />
           <Route  path="/it-products" component={ITproduct} />
           <Route  path="/security-products" component={SecurityProducts} />
           <Route  path="/wireless-solutions" component={WirelessSolutions} />
