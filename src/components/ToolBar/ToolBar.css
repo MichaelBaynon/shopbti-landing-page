@@ -2,27 +2,27 @@
   width: 100%;
   position: fixed;
   background: rgb(245, 245, 245);
-border-bottom: 1px solid lightgrey;
+  border-bottom: 1px solid lightgrey;
   height: 56px;
   top: 0;
   left: 0;
 }
 
 .toolbar_logo {
-display: flex;
-align-items: center;
+  display: flex;
+  align-items: center;
 
-width: fit-content;
+  width: fit-content;
   color: black;
 }
 
 .toolbar_logo img {
   box-shadow: 0 2px 3px rgba(0, 0, 0, 0.5);
-border-radius: 2px;
+  border-radius: 2px;
   display: flex;
-align-items: center;
+  align-items: center;
 
-width: 40px;
+  width: 40px;
   color: black;
 }
 
@@ -51,5 +51,44 @@ width: 40px;
 }
 
 .spacer {
+  flex: 1;
+}
+.nav-items {
+  display: none;
+}
+
+@media screen and (min-width: 1000px) {
+  .spacer {
+    display: none;
+  }
+  .hamburger {
+    display: none;
+  }
+  .nav-items {
+    display: flex;
+    align-items: center;
+    align-content: center;
     flex: 1;
+    justify-content: space-around;
+    font-size: 1.5rem;
+    text-align: center;
+    vertical-align: middle;
+  }
+  .nav-items a {
+    color: white;
+    text-decoration: none;
+    align-self: center;
+    transition: .3s;
+  }
+  .nav-items a:hover {
+    color: yellow;
+  }
+  .toolbar {
+    background: rgb(27, 27, 27);
+    border-bottom: none;
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.5);
+   height: 7%;
+   flex: 1;
+   display: none;
+  }
 }

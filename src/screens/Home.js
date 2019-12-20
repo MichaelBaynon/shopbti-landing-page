@@ -48,7 +48,7 @@ const HomeScreen = props => {
         <div className="text-area">
           <h3 className="title">International Sales</h3>
           <p className="phone-number">
-            Call: <a href="tel:561-793-3963"> (561)-793-3963</a>
+            Call: <a  href="tel:561-793-3963"> (561)-793-3963</a>
           </p>
           <p className="or-statement">or</p>
           <a className="email" href="mailto:tere@shopbti.com">

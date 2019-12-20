@@ -10,11 +10,13 @@ import Backdrop from "./components/Backdrop/Backdrop";
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import { render } from "@testing-library/react";
 
+import Earth from "./imgs/Rotation of The Planet Earth.mp4";
+
 import HomeScreen from "./screens/Home";
-import AboutUs from './screens/AboutUs'
-import ITproduct from './screens/ITproducts'
-import SecurityProducts from './screens/SecurityProducts'
-import WirelessSolutions from './screens/WirelessSolutions'
+import AboutUs from "./screens/AboutUs";
+import ITproduct from "./screens/ITproducts";
+import SecurityProducts from "./screens/SecurityProducts";
+import WirelessSolutions from "./screens/WirelessSolutions";
 
 class App extends Component {
   state = {
@@ -44,12 +46,19 @@ class App extends Component {
           <ToolBar drawerClickHandler={this.drawerToggleClickHandler} />
           <SideDrawer show={this.state.sideDrawerOpen} />
           {backdrop}
-          
+          <div className="content-container">
+            <NavBar className="nav-bar" />
+            <div className="video-container">
+              <video className="video" autoPlay muted loop>
+                <source src={Earth} type="video/mp4" />
+              </video>
+            </div>
+          </div>
           <Route exact path="/" component={HomeScreen} />
-          <Route  path="/policies" component={AboutUs} />
-          <Route  path="/it-products" component={ITproduct} />
-          <Route  path="/security-products" component={SecurityProducts} />
-          <Route  path="/wireless-solutions" component={WirelessSolutions} />
+          <Route path="/policies" component={AboutUs} />
+          <Route path="/it-products" component={ITproduct} />
+          <Route path="/security-products" component={SecurityProducts} />
+          <Route path="/wireless-solutions" component={WirelessSolutions} />
         </div>
       </Router>
     );
