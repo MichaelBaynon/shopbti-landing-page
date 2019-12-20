@@ -1,5 +1,4 @@
 .nav {
-  
   font-size: 20px;
 }
 
@@ -8,7 +7,7 @@
   width: 100%;
 }
 
-.info-area {
+.intro-area {
   width: 80%;
   margin: 20px auto;
   display: flex;
@@ -17,6 +16,21 @@
   align-items: center;
   align-content: center;
   justify-content: center;
+  padding: 20px;
+  border-radius: 5px;
+  border-bottom: 1px solid lightgrey;
+}
+
+.info-area {
+  width: 80%;
+  margin: 0 auto;
+}
+
+
+
+.intro-area p {
+  
+  width: 80%;
 }
 
 .container {
@@ -34,6 +48,7 @@
 .welcomeMSG {
   width: fit-content;
   margin: 20px auto;
+  border-bottom: 1px solid lightgrey;
 }
 
 .text-area {
@@ -44,6 +59,13 @@
   font-size: 1.3rem;
   align-items: center;
   align-content: center;
+  justify-content: center;
+}
+
+.spanish-call-to-action {
+  width: fit-content;
+ 
+  display: flex;
   justify-content: center;
 }
 
@@ -79,12 +101,23 @@
 }
 
 .title {
-  width: 100%;
+  width: fit-content;
   margin: 5 auto;
-  font-size: 1.6rem;
+  font-size: 2rem;
   border-radius: 5px;
   justify-content: center;
   display: flex;
+  
+}
+
+.titleSecurity {
+  width: fit-content;
+  margin: 10px auto;
+  font-size: 1.5rem;
+  border-radius: 5px;
+  justify-content: center;
+  display: flex;
+  
 }
 
 .languages-spoken {
@@ -160,38 +193,76 @@
 
   .video {
     display: flex;
-    flex: 100;
   }
 
-  .info-area {
-    width: 60%;
+  .title {
+    width: fit-content;
+    margin: 0 auto;
+    margin-bottom: 3rem;
+  }
+
+  .titleSecurity {
+    margin-bottom: 3rem;
+  }
+
+  .titleIT {
+    width: fit-content;
+    margin: 0 auto;
+    margin-bottom: 3rem;
+    font-size: 3rem;
   }
 
   body {
-    background-color: black;
+    background-color: rgb(22, 21, 21);
     color: white;
   }
 
   main {
     display: flex;
     flex-direction: column;
-    z-index: 1;
+    /* z-index: 1; */
     width: fit-content;
   }
   .nav {
     display: flex;
+    width: 100%;
     color: white;
-    z-index: 1;
-  
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    background-color: black;
+    box-shadow: 0 3px 3px rgba(0, 0, 0, 0.5);
     align-self: start;
-    margin: 1rem auto;
+  }
+
+  .it-products-list {
+    border: 1px solid rgb(20, 20, 20);
+    border-radius: 5px;
+width: 80%;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    background: rgb(34, 33, 33);
+    padding: 50px;
+    display: flex;
+    flex-direction: row;
+    
+  }
+
+  .info-area {
+    /* border: solid red; */
+    width: 80%;
+    
+  }
+
+  .container {
+    /* border: solid green; */
+    width: 80%;
   }
 
   .nav a {
     color: white;
     text-decoration: none;
-    margin: 0.5rem 5rem;
-    transition: .3s;
+    margin: 0.5rem 4rem;
+    transition: 0.3s;
   }
   .nav a:hover {
     color: yellow;
@@ -213,7 +284,6 @@
     text-align: center;
     font-size: 3rem;
     z-index: 1;
-    
   }
   .video-container {
     position: absolute;
@@ -227,17 +297,17 @@
   .toolbar_logo {
     display: flex;
     align-items: center;
-  
+
     width: fit-content;
     color: black;
   }
-  
+
   .toolbar_logo img {
     box-shadow: 0 2px 3px rgba(0, 0, 0, 0.5);
     border-radius: 2px;
     display: flex;
     align-items: center;
-  
+
     width: 40px;
     color: black;
   }
@@ -247,9 +317,72 @@
   .phone-number a:hover {
     color: rgb(0, 157, 255);
   }
-  
+
   .phone-number a {
     transition: 0.3s;
     color: yellow;
   }
+  .info-area h3 {
+    font-size: 3rem;
+  }
+  .intro-container {
+    
+    display: flex;
+    width: fit-content;
+    margin: 0 auto;
+    justify-content: center;
+   
+  }
+  .intro-area {
+    width: 20%;
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    border: 1px solid rgb(31, 29, 29);
+    margin: 0 4rem;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    background: rgb(27, 26, 26);
+  }
+  .intro-area p {
+    
+    margin: 10px 1rem;
+    display: flex;
+    align-items: center;
+    align-content: center;
+  
+  }
+
+  .building1img {
+    border-top: 1px solid grey;
+  }
+  .welcomeMSG {
+    margin-bottom: 5rem;
+    border-bottom: none;
+  }
+
+  .container {
+    background: rgb(27, 26, 26);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    border: 1px solid rgb(31, 29, 29);
+    margin-top: 2rem;
+    width: fit-content;
+    padding: 3rem;
+    border-radius: 5px;
+    
+  }
+  .home-page-content {
+    display: flex;
+   align-items: center;
+   align-content: center;
+    flex-wrap: wrap;
+    width: 68%;
+    margin: 2rem auto;
+
+  }
+ 
+
+  
 }

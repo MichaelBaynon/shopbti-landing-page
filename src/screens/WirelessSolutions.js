@@ -6,7 +6,7 @@ const WirelessSolutions = () => {
     <main style={{ marginTop: "64px", height: "100%" }}>
       <div className="container">
         <div className="info-area">
-          <h3>Wireless Manufacturers</h3>
+          <h3 className='title'>Wireless Manufacturers</h3>
           <p className="it-products-list">
             3M Products Mars Antennas MASTER APPLIANCE AACT Master Lock AC DC
             Industries McKay Radio Accessories Accele Electronics MECA

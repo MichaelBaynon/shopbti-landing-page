@@ -46,14 +46,9 @@ class App extends Component {
           <ToolBar drawerClickHandler={this.drawerToggleClickHandler} />
           <SideDrawer show={this.state.sideDrawerOpen} />
           {backdrop}
-          <div className="content-container">
-            <NavBar className="nav-bar" />
-            <div className="video-container">
-              <video className="video" autoPlay muted loop>
-                <source src={Earth} type="video/mp4" />
-              </video>
-            </div>
-          </div>
+
+          <NavBar className="nav-bar" />
+
           <Route exact path="/" component={HomeScreen} />
           <Route path="/policies" component={AboutUs} />
           <Route path="/it-products" component={ITproduct} />

@@ -5,7 +5,7 @@ const AboutScreen = props => {
     <main style={{ marginTop: "64px", height: "100%" }}>
       <div className="container">
         <div className="info-area">
-          <h3 className="title">Policies</h3>
+          <h3 className="title-policies">Policies</h3>
           <p>
             Pricing & Payment Terms Pricing All prices are quoted in U.S.
             dollars, on an EXW/SHOPBTI.COM (commonly referred to as FOB) basis.
@@ -26,7 +26,7 @@ const AboutScreen = props => {
             Credit Card sales are irrvocable and unauthorized disputes can
             result in additional charges to your account.{" "}
           </p>
-           3. Check: We accept company and personal check drawn on any US Bank.
+          3. Check: We accept company and personal check drawn on any US Bank.
           Local checks usually require 2-4 days to clear. Out-of-State checks
           may take as long as 10 days to clear. Checks drawn on non-U.S. banks
           may require longer to clear.
@@ -54,13 +54,12 @@ const AboutScreen = props => {
           warehouse unless another Incoterm is specified. We can quote CIF, DDU
           and DDP. For additional information on Incoterms, please contact the
           International Chamber of Commerce website at [www] iccwbo.com.
-          <h3 className="title">International Sales & Marketing </h3>
+          <h3 className="title-policies">International Sales & Marketing </h3>
           <p>
             {" "}
             <a className="email" href="mailto:tere@shopbti.com">
               Email SHOPBTI
             </a>{" "}
-            
             <p>Tel: +1.561.793-3963</p> Return Policies SHOPBTI.COM 's return
             merchandise policy is designed to be as simple as possible for our
             customers. We understand the problems you can have, being so distant

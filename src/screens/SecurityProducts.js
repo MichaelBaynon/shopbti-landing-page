@@ -6,7 +6,7 @@ const SecurityProducts = () => {
     <main style={{ marginTop: "64px", height: "100%" }}>
       <div className="container">
         <div className="info-area">
-          <h3>Security Products Manufacturers</h3>
+          <h3 className='titleSecurity'>Security Products Manufacturers</h3>
           <p className="it-products-list">
             3M Electrical Products A.E.S. AccuTech Act Meters Active Safety
             Adams Rite Adcom Advanced Signaling Advanced Tech Video (ATV)
